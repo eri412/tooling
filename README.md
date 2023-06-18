@@ -1,22 +1,37 @@
 # **Анализ https://www.gd.ru/articles/9039-finansovyy-kontrol**
+
 ## **1. Network**
+
 ### **1.1 Профиль загрузки ресурсов**
+
 [HAR](./profiles/www.gd.ru.har)
+
 ### **1.2 Неоптимальные места**
+
 #### **1.2.1 Дублирование ресурсов**
+
 ![bootstrap](./images/bootstrap.png)
+
 ![cast_and_code](./images/cast_and_code.png)
+
 Не уверен, являются ли нижние jquery дубликатами, или это какие-то плагины.
+
 ![jquery](./images/jquery.png)
+
 ![openapi](./images/openapi.png)
+
 ![popper](./images/popper.png)
+
 ![bootstrap_again](./images/bootstrap_again.png)
+
 ![fonts](./images/fonts.png)
+
 #### **1.2.2 Лишний размер ресурса**
 
 Очень много элементов, состоящих из текста, загружаются и рендерятся в виде **растровых картинок(!)**.
 
 Например:
+
 1. Лого сайта, полностью состоящее из текста, это PNG
 
 ![logo_img](./images/logo_img.png)
@@ -130,5 +145,7 @@ Load - 41739 ms
 ~2.27 MB
 
 ----------
+
 Всего из 4.3 MB не было использовано 2.7 MB. Используются всего 36% из загруженных ресурсов.
 
+----------
