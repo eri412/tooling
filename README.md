@@ -18,16 +18,23 @@
 
 Например:
 1. Лого сайта, полностью состоящее из текста, это PNG
+
 ![logo_img](./images/logo_img.png)
+
 ![logo_load](./images/logo_load.png)
+
 2. В шапке сайта есть целый список PNG ссылок с обычным текстом
+
 ![head_img](./images/head_img.png)
+
 ![head_load](./images/head_load.png)
 
 В html остались комменты
+
 ![html_comments](./images/html_comments.png)
 
 В jquery остались комменты
+
 ![jquery_comments](./images/jquery_comments.png)
 
 Многие js файлы не минифицированны.
